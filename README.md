@@ -4,7 +4,7 @@
 
 ### Find the challenge [**here!**](https://www.frontendmentor.io/challenges/fylo-landing-page-with-two-column-layout-5ca5ef041e82137ec91a50f5)
 
-### [My solution](https://fm-6-huddle-landing-page-alternating-feature-blocks.now.sh/) (hosted on [Vercel](https://vercel.com/))
+### [My solution](https://fm-8-fylo-landing-page-with-two-column-layout.now.sh/) (hosted on [Vercel](https://vercel.com/))
 
 ## Description
 
