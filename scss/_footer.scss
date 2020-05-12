@@ -51,14 +51,13 @@
     }
   }
   &__menu {
+    display: grid;
+    row-gap: 3rem;
+
+    @media only screen and (min-width: $bp-desktop) {
+      grid-template-columns: repeat(2, 1fr);
+    }
     &__list {
-      display: grid;
-      row-gap: 3rem;
-
-      @media only screen and (min-width: $bp-desktop) {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
       &__item {
         margin-bottom: 1rem;
         @media only screen and (min-width: $bp-desktop) {
