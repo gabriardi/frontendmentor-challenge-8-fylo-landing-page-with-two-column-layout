@@ -1,0 +1,83 @@
+.footer {
+  padding: 5rem 3.5rem 3rem;
+
+  background-color: $color-primary-dark;
+  color: #fff;
+
+  display: grid;
+  row-gap: 2rem;
+
+  @media only screen and (min-width: $bp-tablet) {
+    padding: 4rem 15%;
+  }
+
+  @media only screen and (min-width: $bp-desktop) {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 6rem;
+  }
+
+  @media only screen and (min-width: $bp-larger) {
+    padding: 6rem 15%;
+  }
+
+  &__logo {
+    & svg path {
+      fill: #fff;
+    }
+
+    @media only screen and (min-width: $bp-desktop) {
+      grid-column: 1/-1;
+      grid-row: 1/2;
+    }
+  }
+
+  &__contacts {
+    &__contact-container {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+      @media only screen and (min-width: $bp-desktop) {
+        margin-bottom: 2rem;
+      }
+      p {
+        cursor: pointer;
+        &:hover {
+          color: $color-accent-light;
+        }
+      }
+      svg {
+        margin-right: 1.5rem;
+      }
+    }
+  }
+  &__menu {
+    &__list {
+      display: grid;
+      row-gap: 3rem;
+
+      @media only screen and (min-width: $bp-desktop) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      &__item {
+        margin-bottom: 1rem;
+        @media only screen and (min-width: $bp-desktop) {
+          margin-bottom: 2rem;
+        }
+      }
+      a {
+        color: #fff;
+
+        &:hover {
+          color: lighten($color-accent-light, 10);
+        }
+      }
+    }
+  }
+  &__social {
+    justify-self: center;
+    @media only screen and (min-width: $bp-desktop) {
+      justify-self: unset;
+    }
+  }
+}

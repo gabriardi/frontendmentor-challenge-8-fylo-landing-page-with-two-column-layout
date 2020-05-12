@@ -1,0 +1,42 @@
+.card {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  padding: 2rem 3rem;
+  margin: 2rem;
+  box-shadow: 0 0 1rem rgba($color-primary-light, 0.1);
+
+  @media only screen and (min-width: $bp-desktop) {
+    margin: 0;
+    max-width: 50%;
+  }
+  &__description {
+    margin: 1rem 0 2rem;
+    font-size: 1.2rem;
+    @media only screen and (min-width: $bp-desktop) {
+      font-size: 1.4rem;
+      line-height: 1.7;
+    }
+  }
+
+  &__testimonial {
+    display: flex;
+    align-items: center;
+    &__img {
+      width: 5rem;
+      margin-right: 2rem;
+      img {
+        display: block;
+        border-radius: 50%;
+      }
+    }
+    &__name {
+      h3 {
+        font-size: 1.6rem;
+        line-height: 1.5;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+}

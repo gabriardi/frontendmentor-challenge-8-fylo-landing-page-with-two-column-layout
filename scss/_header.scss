@@ -1,0 +1,48 @@
+.header {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media only screen and (min-width: $bp-tablet) {
+    padding: 4rem 15%;
+  }
+
+  @media only screen and (min-width: $bp-desktop) {
+    padding: 4rem 6rem;
+  }
+  @media only screen and (min-width: $bp-larger) {
+    padding: 6rem 15%;
+  }
+
+  &__logo {
+    width: 10rem;
+
+    @media only screen and (min-width: $bp-desktop) {
+      width: 12rem;
+    }
+  }
+
+  &__nav {
+    flex: 0.8;
+
+    @media only screen and (min-width: $bp-tablet) {
+      flex: 0.6;
+    }
+
+    @media only screen and (min-width: $bp-desktop) {
+      flex: 0.2;
+    }
+
+    &__list {
+      display: flex;
+      justify-content: space-between;
+
+      &__item {
+        a {
+          color: $color-primary-dark;
+        }
+      }
+    }
+  }
+}
