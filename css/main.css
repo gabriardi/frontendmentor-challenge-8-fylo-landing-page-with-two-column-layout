@@ -422,9 +422,15 @@ h4 {
   background-color: transparent;
   color: #3c9f8f;
   border-bottom: 1px solid #3c9f8f;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   padding: 0.5rem 0;
   margin: 1.5rem auto 3rem;
+}
+
+.text-btn svg {
+  margin-left: 0.4rem;
 }
 
 @media only screen and (min-width: 70em) {

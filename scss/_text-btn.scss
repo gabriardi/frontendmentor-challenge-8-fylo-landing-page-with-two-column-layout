@@ -2,9 +2,13 @@
   background-color: transparent;
   color: $color-accent-light;
   border-bottom: 1px solid $color-accent-light;
-  display: block;
+  display: flex;
   padding: 0.5rem 0;
   margin: 1.5rem auto 3rem;
+
+  svg {
+    margin-left: 0.4rem;
+  }
 
   @media only screen and (min-width: $bp-desktop) {
     margin: 1.5rem 0 3rem;
