@@ -71,10 +71,7 @@
   }
 }
 .feature--2 {
-  background-image: url(../images/bg-curve-mobile.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center top;
+  background-color: $color-bg-solid;
 
   padding: 2rem 2rem 5rem;
 
@@ -83,12 +80,11 @@
   }
 
   @media only screen and (min-width: $bp-desktop) {
-    background-image: url(../images/bg-curve-desktop.svg);
-    padding: 12rem 6rem;
+    padding: 5rem 6rem 10rem;
   }
 
   @media only screen and (min-width: $bp-larger) {
-    padding: 6rem 15%;
+    padding: 0rem 15% 10rem;
   }
 
   .feature__text {
